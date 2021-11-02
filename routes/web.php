@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+//
+//Route::get('/about', function () {
+//    $data = ['hello' => 'Hello dude!'];
+//    return view('app.welcome', $data);
+////    echo 'About Us text';
+//});
+
+Route::get('{any}', function () {
+    return view('layout.app');
+})->where('any', '.*');
