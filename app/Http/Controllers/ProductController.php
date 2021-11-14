@@ -96,6 +96,7 @@ class ProductController extends Controller
     public function destroy($id)
     {
         $product = Product::find($id);
+        //SELECT * FROM prodcuts WHERE id = $id
         $product->delete();
 
         return response()->json('Product deleted!');

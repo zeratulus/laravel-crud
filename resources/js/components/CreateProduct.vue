@@ -30,7 +30,7 @@ export default {
             product: {
                 name: 'Some name',
                 detail: 'Some detail',
-                price: 100
+                price: 110
             }
         }
     },
