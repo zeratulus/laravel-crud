@@ -12,6 +12,10 @@
                         <label>Detail</label>
                         <input type="text" class="form-control" v-model="product.detail">
                     </div>
+                    <div class="form-group">
+                        <label>Price</label>
+                        <input type="text" class="form-control" v-model="product.price">
+                    </div>
                     <button type="submit" class="btn btn-primary">Create</button>
                 </form>
             </div>
@@ -23,7 +27,11 @@
 export default {
     data() {
         return {
-            product: {}
+            product: {
+                name: 'Some name',
+                detail: 'Some detail',
+                price: 100
+            }
         }
     },
     methods: {
